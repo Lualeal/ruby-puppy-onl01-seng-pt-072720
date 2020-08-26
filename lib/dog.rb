@@ -15,11 +15,7 @@
    # @@all
   #end 
   
-  #def self.print_all
-   # @all.each do |dog|
-    #  puts dog.name 
-    #end 
-#  end 
+  
   
  # def save 
   #  self.all.each << self 
@@ -50,6 +46,12 @@ def self.all
     puts dog.name
   end
 end
+
+def self.print_all
+    @all.each do |dog|
+      puts dog.name 
+  end 
+end 
 
 def Dog.clear_all
   @@all.clear
