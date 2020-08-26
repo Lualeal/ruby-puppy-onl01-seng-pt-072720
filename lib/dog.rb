@@ -1,33 +1,31 @@
 # Add your code here
 #class Dog 
-  
-
 class Dog
 attr_accessor :name
 
 @@all = []
 
-def initialize(name)
-  @name = name
-  @@save = save
+  def initialize(name)
+   @name = name
+   @@save = save
  # @@all << self
-end
+  end
 
-def self.all
+  def self.all
   @@all
-end
+  end
 
-def self.print_all
+  def self.print_all
     @all.each do |dog|
       puts dog.name 
-  end 
-end 
-
- def save 
-  @@all << self 
+    end 
   end 
 
-def Dog.clear_all
-  @@all.clear
-end
+  def save 
+   @@all << self 
+  end 
+
+  def Dog.clear_all
+   @@all.clear
+  end
 end
