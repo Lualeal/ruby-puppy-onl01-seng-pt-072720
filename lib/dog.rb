@@ -21,7 +21,8 @@ class Dog
   end 
   
   def self.print_all
-    self.all.each{|name| puts "#{name}"}
+    @all.each do |dog|
+      puts dog.name 
   end 
   
   def save 
@@ -32,7 +33,4 @@ class Dog
    #@@name = dogs_name
   #end 
   
-   def self.name
-     @@name 
-   end 
 end 
